@@ -1,0 +1,89 @@
+<div class="separation">
+    <div class="text-group">
+        <p class="text t">Lorem Ipsum</p>
+        <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+            the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.</p>
+    </div>
+    <p-carousel [value]="products" [numVisible]="3" [numScroll]="3" [circular]="true" autoplayInterval="3000"
+        [responsiveOptions]="responsiveOptions">
+        <ng-template let-product #item>
+            <div class="border border-surface-200 dark:border-surface-700 rounded m-2 p-4">
+                <div class="mb-4">
+                    <div class="relative mx-auto">
+                        <img src="/assets/images/{{product.image}}" [alt]="product.name"
+                            class="w-full rounded-border" />
+                        <p-tag [value]="product.inventoryStatus" [severity]="product.severity" class="absolute"
+                            styleClass="dark:!bg-surface-900" [ngStyle]="{ 'left.px': 5, 'top.px': 5 }" />
+                    </div>
+                </div>
+                <div class="mb-4 font-medium">{{product.name}}</div>
+                <div class="flex justify-between items-center">
+                    <div class="mt-0 font-semibold text-xl">$ {{[product.price]}}</div>
+                    <span>
+                        <p-button icon="pi pi-heart" severity="secondary" [outlined]="true" />
+                        <p-button icon="pi pi-shopping-cart" styleClass="ml-2" />
+                    </span>
+                </div>
+            </div>
+        </ng-template>
+    </p-carousel>
+</div>
+
+<div class="separation">
+    <div class="text-group">
+        <p class="text t">Lorem Ipsum</p>
+        <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+            the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.</p>
+
+        <p class="text t">Lorem Ipsum</p>
+        <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+            the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.</p>
+    </div>
+
+</div>
+
+<div class="separation">
+    <p-galleria [value]="images" [circular]="true" [autoPlay]="true" [transitionInterval]="3000">
+        <ng-template pTemplate="item" let-item>
+            <img [src]="item.itemImageSrc" [alt]="item.alt" class="w-full h-auto" />
+        </ng-template>
+        <ng-template pTemplate="thumbnail" let-item>
+            <img [src]="item.thumbnailImageSrc" [alt]="item.alt" class="w-16 h-16" />
+        </ng-template>
+    </p-galleria>
+</div>
+
+<div class="separation">
+    <div class="text-group">
+        <p class="text t">Lorem Ipsum</p>
+        <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+            the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.</p>
+
+        <p class="text t">Lorem Ipsum</p>
+        <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+            the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.</p>
+    </div>
+
+</div>

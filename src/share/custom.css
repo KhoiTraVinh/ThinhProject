@@ -1,0 +1,13 @@
+.text {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.t{
+    font-size: 36px;
+    font-weight: bold;
+}

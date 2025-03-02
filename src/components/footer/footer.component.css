@@ -1,0 +1,26 @@
+.footer {
+    height: 10%;
+    width: 80%;
+    margin: auto;
+}
+.content {
+    background-image: url("/assets/images/footer.jpg");
+    margin: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; /* Prevents repetition */
+    height: 50%; /* Makes sure it covers the full viewport height */
+    width: 100%; /* Ensures full viewport width */
+    margin: 0;
+    padding: 50px;
+}
+
+i{
+    margin-right: 2px;
+}
+
+@media (max-width: 768px) {
+    .flex-item {
+        flex: 1 1 100%;
+    }
+}

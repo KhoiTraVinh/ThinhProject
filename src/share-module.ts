@@ -204,6 +204,7 @@ import { DrawerModule } from 'primeng/drawer';
         InputIconModule,
         AutoFocusModule,
         OverlayBadgeModule,
+        
     ],
       exports: [
         TabsModule,
