@@ -1,16 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { AnimateOnScrollModule } from 'primeng/animateonscroll';
-import { ShareModule } from '../share-module';
+import { ShareModule } from '../../share-module';
 import { MenuItem } from 'primeng/api';
 
 @Component({
-  selector: 'app-landing-page',
+  selector: 'app-navbar',
   standalone: true,
   imports: [ShareModule],
-  templateUrl: './landing-page.component.html',
-  styleUrl: './landing-page.component.css',
+  templateUrl: './navbar.component.html',
+  styleUrl: './navbar.component.css',
 })
-export class LandingPageComponent implements OnInit {
+export class NavbarComponent implements OnInit {
   items: MenuItem[] = [];
   ngOnInit(): void {
     this.items = [
